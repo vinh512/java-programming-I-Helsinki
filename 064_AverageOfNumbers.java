@@ -12,6 +12,7 @@ public class AverageOfNumbers {
     
     public static double average(ArrayList<Integer> list) {        
         double average = 0.0;
+        // note that we casted to double because the return type takes a double
         average = (double) sum(list) / list.size();
         return average;
     }
@@ -22,6 +23,9 @@ public class AverageOfNumbers {
         list.add(2);
         list.add(7);
         list.add(2);
+        
+        // we can also initialize an ArrayList literal like:
+        // List<Integer> list = {3, 2, 7, 2};
 
         System.out.println("The average is: " + average(list));
     }
